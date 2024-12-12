@@ -165,17 +165,24 @@ footer section footer i {
         display: grid;
         grid-template-columns: 400px 400px;
         grid-template-rows: repeat(3,auto);
+        gap: 2vmax;
     }
 
 }
 
-@media (max-width : 500px) {
-    .primary-header ,.primary-footer{
+@media (max-width : 541px) {
+    .primary-header {
         flex-direction: column;
     }
 }
 
-@media (max-width : 800px){
+@media (max-width : 768px) {
+   .primary-footer{
+        flex-direction: column;
+    }
+}
+
+@media (max-width : 843px){
     main .project-container{
         display: grid;
         grid-template-columns: min(100%,500px);
